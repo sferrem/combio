@@ -1,0 +1,31 @@
+{
+	"short_name": "Cambio",
+	"name": "Cambio — convert currencies",
+	"icons": [
+		{
+			"src": "pwa/assets/icons/ic_launcher.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "pwa/assets/icons/512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "pwa/assets/icons/72.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "pwa/assets/icons/40.png",
+			"type": "image/png",
+			"sizes": "40x40"
+		}		
+	],
+	"start_url": "/",
+	"background_color": "#FFFFFF",
+	"display": "standalone",
+	"orientation": "portrait",
+	"theme_color": "#FFFFFF"
+}
