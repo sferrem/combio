@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-    <head>
+<html lang="pt-br">
+    <head role="baner">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CombiO</title>
-        <link rel="stylesheet" href="css/style.css"
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="assets/icons/512.png">
     </head>
+    <main>
     <body>
         <h2>Currency converter</h2>
         <p>Insira um valor em dólar para converter para real</p>
-	<label for="preco">$:</label>
+	<label>Valor a converter: $:
 	<input 
 	  type="number" 
-	  id="price" 
+	  id="price-input" 
 	  name="price" 
 	  step="1" 
 	  min="0.99" 
 	  inputmode="decimal">
+	</label>
 
-        <button onclick="convertCurrency('USD-BRL', document.getElementById('price').value)">Gerar conversão</button>
-        <div id="text"></div>
-        <script src="js/script.js"></script>
+        <button id="convertButton">Gerar conversão</button>
+        <div id="result"></div>
+        <script src="js/main.js"></script>
     </body>
+    </main>
+    <footer role="contentinfo">
+	    <p>© 2026 CombiO. Todos os direitos reservados.</p>
 </html>
