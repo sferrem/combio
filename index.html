@@ -9,10 +9,16 @@
 	<link rel="manifest" href="manifest.json">
 	<link rel="icon" href="assets/icons/512.png">
     </head>
-    <main>
     <body>
+    <main>
         <h2>Currency converter</h2>
-        <p>Insira um valor em dólar para converter para real</p>
+        <p>Insira um valor em dólar para converter</p>
+	<label for="currency">Escolha uma moeda</label>
+	<select id="currency" name="currency">
+		<option value="USD">USD</option>
+		<option value="EUR">EUR</option>
+		<option value="BRL">BRL</option>
+	</select>
 	<label>Valor a converter: $:
 	<input 
 	  type="number" 
@@ -24,10 +30,12 @@
 	</label>
 
         <button id="convertButton">Gerar conversão</button>
+	<button id="getLocationButton">Converter moeda local</button>
         <div id="result"></div>
         <script src="js/main.js"></script>
-    </body>
     </main>
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="main-footer">
 	    <p>© 2026 CombiO. Todos os direitos reservados.</p>
+    </footer>
+    </body>
 </html>
